@@ -13,6 +13,7 @@ public class Node<T> {
 	 * @param v
 	 */
 	public Node(T v) {
+		nextNode = null;
 		val = v;
 	}
 	

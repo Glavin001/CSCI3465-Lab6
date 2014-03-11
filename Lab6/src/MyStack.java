@@ -30,11 +30,15 @@ public class MyStack<T>
 	
 	/**
 	 * Returns the value popped off the top of the stack.
-	 * @return The value popped off the top of the stack.
+	 * @return The value popped off the top of the stack. Null if not available.
 	 */
 	public T pop()
 	{
 		Node<T> temp = first;
+		if (temp == null)
+		{
+			return null;
+		}
 		first = first.nextNode;
 		return temp.val;
 	}

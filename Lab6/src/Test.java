@@ -17,10 +17,13 @@ public class Test {
 		s1.push("test3");
 		while (!s1.isEmpty())
 		{
-			System.out.println("Top:"+ s1);
+			System.out.println("toString:"+ s1);
 			String tmp = (String) s1.pop();
 			System.out.println("Popped: "+ tmp);				
 		}
+		System.out.println("toString:"+ s1);
+		System.out.println("should be null:"+ s1.pop());
+		
 		
 		System.out.println();
 		System.out.println("Test 2:");
@@ -39,11 +42,12 @@ public class Test {
 		
 		while (!s2.isEmpty())
 		{
-			System.out.println("Top:"+ s2);
+			System.out.println("toString:"+ s2);
 			ArrayList<String> tmp = (ArrayList<String>) s2.pop();
 			System.out.println("Popped: "+ tmp);				
 		}
-		
+		System.out.println("toString:"+ s1);
+		System.out.println("should be null:"+ s1.pop());
 		
 	}
 
