@@ -8,6 +8,8 @@ public class Test {
 	 */
 	public static void main(String[] args) {
 		
+		System.out.println("Test 1:");
+		
 		MyStack s1 = new MyStack<String>();
 		
 		s1.push("test1");
@@ -20,7 +22,9 @@ public class Test {
 			System.out.println("Popped: "+ tmp);				
 		}
 		
-
+		System.out.println();
+		System.out.println("Test 2:");
+		
 		MyStack s2 = new MyStack<ArrayList<String>>();
 		
 		for (int i=0; i<10; i++)
